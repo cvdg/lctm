@@ -5,3 +5,5 @@
 1. ${ZDOTDIR}/.zshrc (if interactive)
 1. ${ZDOTDIR}/.zlogin (if login)
 1. ${ZDOTDIR}/.zlogout (if login)
+
+[prmp](https://github.com/ceesvandegriend/prmp)
