@@ -10,4 +10,11 @@ case $(uname -s) in
             eval "$(pyenv init -)"
         fi
         ;;
+    Linux)
+        if [ -x ${HOME}/.pyenv/bin/pyenv ] ; then
+            export path=(${HOME}/.pyenv/bin ${path})
+            export PYENV_ROOT="$HOME/.pyenv"
+            eval "$(pyenv init -)"
+        fi
+        ;;
 esac

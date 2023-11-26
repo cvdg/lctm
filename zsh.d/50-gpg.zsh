@@ -7,4 +7,9 @@ case $(uname -s) in
             export GPG_TTY=$(tty)
         fi
         ;;
+    Linux)
+        if [ -x /usr/bin/gpg ] ; then
+            export GPG_TTY=$(tty)
+        fi
+        ;;
 esac
